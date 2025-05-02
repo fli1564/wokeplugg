@@ -1,5 +1,5 @@
 
-import { Route, FileText, Users, Star, Calendar } from "lucide-react";
+import { Route, FileText, Users, Star, Calendar, Settings } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -27,6 +27,11 @@ const ServicesSection = () => {
       icon: Calendar,
       title: "Hospitality & Logistics",
       description: "Comprehensive travel management, accommodations, and on-site support for artist teams."
+    },
+    {
+      icon: Settings,
+      title: "Tailored Solutions",
+      description: "Every service can be tailored to your specific needs, whether you're planning a single show or a multi-continent tour."
     }
   ];
 
@@ -63,9 +68,6 @@ const ServicesSection = () => {
         </div>
 
         <div className="mt-16 text-center animate-on-scroll">
-          <p className="text-lg text-neutral-800 font-medium mb-8">
-            Every service can be tailored to your specific needs, whether you're planning a single show or a multi-continent tour.
-          </p>
           <a 
             href="#contact" 
             className="inline-block text-primary-600 hover:text-primary-700 font-medium btn-hover"
