@@ -15,7 +15,7 @@ export default {
 			center: true,
 			padding: '2rem',
 			screens: {
-				'2xl': '1400px'
+				'2xl': '1440px'
 			}
 		},
 		extend: {
@@ -28,16 +28,16 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
-          '50': '#F5F1FF',
-          '100': '#EBE3FF',
-          '200': '#D8C7FF',
-          '300': '#C5A9FF',
-          '400': '#B08BFF',
-          '500': '#9D6DFF',
-          '600': '#8B6BFF',
-          '700': '#7649FF',
-          '800': '#5F2AFF',
-          '900': '#4907FF',
+					'50': '#F7F3F2',
+					'100': '#EFE6E5',
+					'200': '#DFCECB',
+					'300': '#CEB5B1',
+					'400': '#BFA29F', // Mocha Mousse (primary accent)
+					'500': '#AB8A86',
+					'600': '#8C746F', // Desaturated clay (secondary accent)
+					'700': '#725D59',
+					'800': '#594947',
+					'900': '#3F3332',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -73,17 +73,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-        neutral: {
-          '100': '#F5F5F6',
-          '200': '#EAEAEC',
-          '300': '#D6D6DA',
-          '400': '#A9A9B3',
-          '500': '#73737D',
-          '600': '#45454B',
-          '700': '#353538',
-          '800': '#26262A',
-          '900': '#18181A',
-        }
+				neutral: {
+					'100': '#F9F7F6', // Warm white
+					'200': '#E0DFDE',
+					'300': '#C7C5C4',
+					'400': '#ABA9A7',
+					'500': '#8F8D8B',
+					'600': '#73716F',
+					'700': '#575553',
+					'800': '#3A3937',
+					'900': '#1E1E1E', // Deep charcoal
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -133,7 +133,7 @@ export default {
         'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite'
 			},
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif'],
+        'manrope': ['Manrope', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
       },
       backgroundImage: {
