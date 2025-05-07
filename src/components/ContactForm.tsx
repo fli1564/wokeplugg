@@ -1,8 +1,8 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useToast } from '@/hooks/use-toast';
 import { Mail, Phone } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -51,8 +51,20 @@ const ContactForm = () => {
     }
     
     try {
-      // Simulate form submission - in production, this would send to a real backend
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Send email using EmailJS
+      await emailjs.send(
+        'service_e1htx0t', // Your EmailJS service ID
+        'template_3bb2zpk', // Your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          role: formData.role,
+          company: formData.company,
+          message: formData.message,
+          to_name: 'WokePlugg Team',
+        },
+        'o02Srr19TsaJQ1b7e' // Your EmailJS public key
+      );
       
       toast({
         title: "Success!",
