@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - /usr/bin/npm ci
+    - /usr/bin/npm run build
+    - /usr/bin/rsync -a --delete dist/ ../public_html/
