@@ -58,8 +58,8 @@ const ContactForm = () => {
         {
           name: formData.name,
           email: formData.email,
-          role: formData.role,
           company: formData.company,
+          role: formData.role,
           message: formData.message,
         },
         'o02Srr19TsaJQ1b7e' // Your EmailJS public key
