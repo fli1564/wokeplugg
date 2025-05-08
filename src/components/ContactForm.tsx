@@ -61,7 +61,6 @@ const ContactForm = () => {
           role: formData.role,
           company: formData.company,
           message: formData.message,
-          to_name: 'WokePlugg Team',
         },
         'o02Srr19TsaJQ1b7e' // Your EmailJS public key
       );
