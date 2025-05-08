@@ -56,8 +56,8 @@ const ContactForm = () => {
         'service_e1htx0t', // Your EmailJS service ID
         'template_3pz7gde', // Updated EmailJS template ID
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
           role: formData.role,
           company: formData.company,
           message: formData.message,
